@@ -58,3 +58,12 @@ function calculateShippingCost(weight, location, expedited = false) {
 console.log(calculateShippingCost(10, "USA", true));    //Test Data
 console.log(calculateShippingCost(5, "Canada", false));  //Test Data
 
+// Task 5 Returning Values, Scenario: Business Loan Interest Calculation
+
+function calculateLoanInterest(principal, rate, years) {
+    let interest = principal * rate * years;
+    return `Total Interest: $${interest.toFixed(2)}`;
+};  //function that returns total interest
+
+console.log(calculateLoanInterest(1000, 0.05, 3));   //Test Data
+console.log(calculateLoanInterest(5000, 0.07, 5));   //Test Data
