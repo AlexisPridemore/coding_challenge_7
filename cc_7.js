@@ -31,7 +31,7 @@ const calculateLoyaltyDiscount = (amount, years) => {
     }
     let discountedPrice = amount - (amount * discount);
     return `Discounted Price: $${discountedPrice.toFixed(2)}`;
-};
+};  //apply a loyalty discount
 
-console.log(calculateLoyaltyDiscount(100, 6));
-console.log(calculateLoyaltyDiscount(200, 2));  
+console.log(calculateLoyaltyDiscount(100, 6));  //Test Data
+console.log(calculateLoyaltyDiscount(200, 2));  //Test Data
