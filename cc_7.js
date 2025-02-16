@@ -70,11 +70,11 @@ console.log(calculateLoanInterest(5000, 0.07, 5));   //Test Data
 
 // Task 6 Higher-Order Functions, Scenario: Filtering High-Value Transactions
 
-let transactions = [500, 1200, 3000, 800, 2200];
+let transactions = [500, 1200, 3000, 800, 2200];  //Declare an array
 let highValueTransactions = filterHighValueTransactions(transactions, amount => amount > 1000);
 
 function filterHighValueTransactions(transactions, filterFunction) {
     return transactions.filter(filterFunction);
-};
+};  //filter transactions above $1000
 
-console.log(highValueTransactions);
+console.log(highValueTransactions);  //Test and log Data
