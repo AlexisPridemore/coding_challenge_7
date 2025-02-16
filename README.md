@@ -1,1 +1,1 @@
-Coding CHallenge #7
+Coding Challenge #7
