@@ -91,3 +91,13 @@ function createBudgetTracker() {
 let budget = createBudgetTracker();
 console.log(budget(300));   //Test Data
 console.log(budget(200));   //Test Data
+
+// Task 8  Recursion in JavaScript, Scenario: Business Growth Projection
+
+function calculateGrowth(years, revenue) {  //project revenue growth
+    if (years === 10) return `Projected Revenue: $${revenue.toFixed(2)}`;  //round to two decimal places
+    return calculateGrowth(years + 1, revenue * 1.05);
+};  //output each year increasing revenue by 5% until reaching year 10
+
+console.log(calculateGrowth(8, 1000));  //Test data
+console.log(calculateGrowth(5, 5000));  //Test Data
